@@ -1,0 +1,150 @@
+.page-shell {
+  width: min(1100px, 100%);
+  margin: 0 auto;
+  padding: 32px 20px 48px;
+  box-sizing: border-box;
+}
+
+.hero-panel {
+  background: linear-gradient(135deg, #0f172a, #1d4ed8);
+  color: white;
+  border-radius: 24px;
+  padding: 42px 28px;
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.2);
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  font-size: 0.75rem;
+  font-weight: 700;
+  opacity: 0.8;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  max-width: 640px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.auth-layout {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+.feature-panel,
+.auth-card {
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid #dfe7f2;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 10px 28px rgba(15, 23, 42, 0.06);
+}
+
+.feature-panel h2 {
+  margin-top: 0;
+}
+
+.feature-panel ul {
+  margin: 18px 0 0;
+  padding-left: 20px;
+  color: #334155;
+  line-height: 1.8;
+}
+
+.toggle-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 8px;
+  background: #e2e8f0;
+  padding: 6px;
+  border-radius: 12px;
+  margin-bottom: 18px;
+}
+
+.toggle {
+  border: none;
+  background: transparent;
+  padding: 10px 12px;
+  font-weight: 700;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #334155;
+}
+
+.toggle.active {
+  background: white;
+  color: #0f172a;
+  box-shadow: 0 2px 8px rgba(15, 23, 42, 0.08);
+}
+
+.auth-form,
+.profile-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.auth-form label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.auth-form input {
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  padding: 0.85rem 0.9rem;
+  font-size: 1rem;
+}
+
+.primary-btn {
+  border: none;
+  border-radius: 12px;
+  padding: 0.9rem 1.4rem;
+  background: linear-gradient(135deg, #1d4ed8, #2563eb);
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.primary-btn:disabled {
+  opacity: 0.7;
+  cursor: wait;
+}
+
+.full-width {
+  width: 100%;
+}
+
+.status {
+  border-radius: 10px;
+  padding: 10px 12px;
+  font-weight: 600;
+}
+
+.status.success {
+  background: #dcfce7;
+  color: #166534;
+}
+
+.status.error {
+  background: #fee2e2;
+  color: #b91c1c;
+}
+
+.profile-panel h3 {
+  margin: 0;
+}
+
+@media (max-width: 760px) {
+  .auth-layout {
+    grid-template-columns: 1fr;
+  }
+}
